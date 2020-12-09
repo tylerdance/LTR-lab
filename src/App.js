@@ -3,14 +3,20 @@ import './App.css';
 import Movie from './Movie'
 
 function App() {
-  // const details = {
-  //   titles: ["The FellowShip of the Ring", "The Two Towers", "The Return of the King"],
-  //   runTime: ["2 hrs 58 min", "2 hrs 59 min", "3 hrs 21 min"]
-  // }
   const LOTR1 = {
     title: "The FellowShip of the Ring",
     hours: 2,
     minutes: 58
+  }
+  const LOTR2 = {
+    title: "The Two Towers",
+    hours: 2,
+    minutes: 59
+  }
+  const LOTR3 = {
+    title: "The Return of the King",
+    hours: 3,
+    minutes: 21
   }
   return (
     <div className="App">
@@ -18,6 +24,16 @@ function App() {
         title={LOTR1.title}
         hours={LOTR1.hours}
         minutes={LOTR1.minutes}
+      />
+      <Movie 
+        title={LOTR2.title}
+        hours={LOTR2.hours}
+        minutes={LOTR2.minutes}
+      />
+      <Movie 
+        title={LOTR3.title}
+        hours={LOTR3.hours}
+        minutes={LOTR3.minutes}
       />
     </div>
   );
